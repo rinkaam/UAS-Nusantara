@@ -1,0 +1,112 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #2196f3; /* Font color set to blue */
+}
+
+/* Home section styles */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 60vh; /* Use min-height for responsiveness */
+  background: #fff; /* Background color set to white */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #2196f3; /* Font color set to blue */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-header,
+.home-highlights {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent to blend with background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  color: white; /* Header font color */
+}
+
+/* Highlight item styles */
+.highlights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.highlight-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2196f3; /* Font color set to blue */
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  flex: 1 1 calc((100% / 3) - 20px); /* Calculate width with gap */
+  max-width: calc((100% / 3) - 20px); /* Calculate max-width with gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #2196f3; /* Border color set to blue */
+}
+
+.highlight-item img {
+  width: 98%;
+  height: 300px; /* Set height for consistent size */
+  margin: 5px;
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+  border-radius: 10px 10px 0 0; /* Adjust border radius if needed */
+}
+
+.highlight-item h3 {
+  margin: 10px 0;
+}
+
+.highlight-item p {
+  padding: 0 10px 20px;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .highlight-item {
+    flex: 1 1 calc((100% / 2) - 20px);
+    max-width: calc((100% / 2) - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header,
+  .home-highlights {
+    padding: 10px;
+  }
+
+  .highlight-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header,
+  .home-highlights {
+    padding: 5px;
+  }
+
+  .highlight-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .highlight-item p {
+    padding: 0 5px 10px;
+  }
+}

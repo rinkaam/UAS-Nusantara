@@ -1,0 +1,96 @@
+/* Global styles */
+.papua {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: justify;
+  background: url("../assets/sunset.jpg");
+  background-size: cover; /* Menutupi seluruh area */
+  background-attachment: fixed; /* Tetap ketika scrolling */
+  color: #333; /* Ensure text is readable against the background */
+}
+
+.papua-header {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent to blend with background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto; /* Center align the header */
+  color: white; /* Header font color */
+  text-align: center; /* Center align text */
+}
+
+.papua-header h1 {
+  margin: 0;
+  font-size: 36px;
+  align-items: center;
+}
+
+.papua-header p {
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+
+.papua-info {
+  margin-top: 30px;
+}
+
+.papua-info h2 {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+.papua-info .info-ctn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  border: 2px solid #2196f3;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.info-item h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #2196f3;
+  text-align: center; /* Center align text */
+}
+
+.info-item p {
+  font-size: 16px;
+  color: #555;
+  text-align: center; /* Center align text */
+}
+
+.info-item img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

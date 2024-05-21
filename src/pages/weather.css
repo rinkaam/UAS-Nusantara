@@ -1,0 +1,54 @@
+/* Weather Card */
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border: 2px solid #2196f3;
+}
+
+.weather-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #2196f3;
+}
+
+.weather-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.weather-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Weather Information */
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 40%;
+  color: #2196f3; /* Font color set to blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+.weather-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
